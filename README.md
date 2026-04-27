@@ -69,7 +69,7 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-<img src='http:./project8_walkthruuh.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='./project8_walkthruuh.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 GIF created with ScreenToGIF
 
