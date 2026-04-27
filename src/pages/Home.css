@@ -1,0 +1,21 @@
+.home-container {
+  min-height: 100vh;
+  padding: 40px;
+  margin: 5px;
+
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+
+  text-align: center;
+  background: transparent;
+
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  font-family: 'Herculanum', 'Papyrus', 'Georgia', serif;
+  margin: 10px;
+  color: #3d6486;
+}

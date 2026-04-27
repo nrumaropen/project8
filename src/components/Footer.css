@@ -1,0 +1,22 @@
+.footer {
+  text-align: center;
+  padding: 15px;
+  font-weight: bold;
+  background-color: var(--footer-bg);
+  border-top: 1px solid var(--secondary);
+  margin-top: auto;
+  color: silver;
+}
+
+.footer a {
+  font-weight: bolder;
+  color: silver;
+}
+
+.footer a:hover {
+  color: goldenrod;
+}
+
+[data-theme="dark"] .footer {
+  color: silver;
+}

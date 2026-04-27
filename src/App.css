@@ -1,0 +1,109 @@
+html,
+body,
+#root {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* 🌄 GLOBAL BACKGROUND (FIXED) */
+body {
+  font-family: "Georgia", serif;
+  min-height: 100vh;
+
+  color: var(--text);
+  overflow-x: hidden;
+
+  background-image: url("./assets/lightmode.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+  display: flex;
+  flex-direction: column;
+}
+
+/* 🌙 DARK MODE BACKGROUND */
+[data-theme="dark"] body {
+  background-image: url("./assets/darkmode.png");
+}
+
+/* APP WRAPPER */
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  width: 100%;
+}
+
+/* MAIN CONTENT */
+.main-content {
+  flex: 1;
+  width: 100%;
+  padding: 24px 24px 40px;
+}
+
+/* NAVBAR */
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 12px 24px;
+
+  background-color: var(--card);
+  backdrop-filter: blur(6px);
+
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+/* NAV GROUPS */
+.nav-left,
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+/* LINKS */
+.nav a {
+  text-decoration: none;
+  color: var(--text);
+  font-weight: bold;
+
+  padding: 6px 12px;
+  border-radius: 6px;
+
+  transition: 0.2s ease;
+}
+
+.nav a:hover {
+  background-color: var(--accent);
+  transform: scale(1.05);
+}
+
+/* DARK MODE TOGGLE */
+.dark-toggle {
+  padding: 6px 14px;
+
+  border-radius: 8px;
+  border: none;
+
+  background: rgba(255, 255, 255, 0.15);
+  color: var(--text);
+
+  cursor: pointer;
+
+  transition: 0.2s ease;
+}
+
+.dark-toggle:hover {
+  transform: scale(1.1);
+  background: rgba(255, 255, 255, 0.25);
+}

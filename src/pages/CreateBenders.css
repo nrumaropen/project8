@@ -1,0 +1,85 @@
+.create-post-form,
+.edit-post-form {
+  background-color: var(--card);
+  backdrop-filter: blur(2px);
+
+  padding: 32px;
+  width: 100%;
+  max-width: 420px;
+
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  margin: 40px auto;
+}
+
+.create-page {
+  text-align: center;
+}
+
+.create-post-form input,
+.create-post-form textarea,
+.edit-post-form input,
+.edit-post-form textarea {
+  width: 100%;
+  padding: 12px;
+
+  border: 1px solid var(--border);
+  border-radius: 6px;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  outline: none;
+
+  background-color: rgba(255, 255, 255, 0.08);
+  color: var(--text);   /* FIX: no more black */
+
+  transition: border 0.2s ease;
+}
+
+.create-post-form input::placeholder,
+.create-post-form textarea::placeholder {
+  color: black;
+  font-weight: 600;
+  opacity: 1;
+}
+
+.create-post-form input:focus,
+.create-post-form textarea:focus,
+.edit-post-form input:focus,
+.edit-post-form textarea:focus {
+  border-color: var(--accent);
+}
+
+.create-post-form textarea,
+.edit-post-form textarea {
+  height: 140px;
+  resize: none;
+}
+
+.create-post-form button,
+.edit-post-form button {
+  background-color: var(--accent);
+  color: var(--text);
+
+  border: none;
+  padding: 12px;
+
+  font-size: 16px;
+  font-weight: 700;   
+
+  border-radius: 8px;
+  cursor: pointer;
+
+  transition: transform 0.2s ease;
+}
+
+.create-post-form button:hover,
+.edit-post-form button:hover {
+  transform: scale(1.05);
+}

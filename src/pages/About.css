@@ -1,0 +1,92 @@
+.about-page {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+.hero {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.hero h1 {
+  font-size: 32px;
+  margin-bottom: 8px;
+  color: var(--accent);
+}
+
+.subtitle {
+  font-size: 14px;
+  opacity: 0.7;
+  letter-spacing: 1px;
+}
+
+.about-content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+
+@media (max-width: 700px) {
+  .about-content {
+    grid-template-columns: 1fr;
+  }
+}
+
+.card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 18px;
+
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
+}
+
+.card h2 {
+  margin-bottom: 10px;
+  color: var(--accent);
+}
+
+.card ul {
+  padding-left: 18px;
+  line-height: 1.6;
+}
+
+.card li {
+  margin-bottom: 6px;
+}
+
+.card.air {
+  border-left: 6px solid #e6d8b5;
+  background: rgba(245, 241, 220, 0.6);
+}
+
+.card.fire {
+  border-left: 6px solid #ff4b2b;
+  background: rgba(255, 75, 43, 0.12);
+}
+
+.card.water {
+  border-left: 6px solid #3aa0ff;
+  background: rgba(58, 160, 255, 0.12);
+}
+
+.card.earth {
+  border-left: 6px solid #84c26b;
+  background: rgba(194, 164, 107, 0.12);
+}
+
+@media (max-width: 600px) {
+  .hero h1 {
+    font-size: 24px;
+  }
+
+  .about-page {
+    padding: 16px;
+  }
+}

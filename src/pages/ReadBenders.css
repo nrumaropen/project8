@@ -1,0 +1,169 @@
+.post-page {
+  display: flex;
+  gap: 24px;
+  padding: 24px;
+  max-width: 1100px;
+  margin: 0 auto;
+  font-family: Arial, sans-serif;
+  background: #f7f7fb;
+  min-height: 100vh;
+}
+
+.card-post-card {
+  flex: 3;
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.card-post-card h1 {
+  margin-bottom: 10px;
+  font-size: 28px;
+  color: #222;
+}
+
+.card-post-card p {
+  color: #444;
+  line-height: 1.6;
+}
+
+.post-meta {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #888;
+}
+
+.card-buttons {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.card-buttons button {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  background: #2d6cdf;
+  color: white;
+  font-size: 14px;
+  transition: 0.2s ease;
+}
+
+.card-buttons button:hover {
+  background: #1f4fbf;
+}
+
+.card-buttons button:nth-child(3) {
+  background: #e74c3c;
+}
+
+.card-buttons button:nth-child(3):hover {
+  background: #c0392b;
+}
+
+.comment-card {
+  margin-top: 20px;
+}
+
+.comment-card h3 {
+  margin-bottom: 10px;
+}
+
+.comment-input {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.comment-input input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+}
+
+.comment-input button {
+  padding: 10px 14px;
+  border: none;
+  background: #27ae60;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.comment-input button:hover {
+  background: #1e8f4d;
+}
+
+.comment-box {
+  padding: 10px;
+  border: 1px solid #eee;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  background: #fafafa;
+}
+
+.comment-box p {
+  margin-bottom: 8px;
+}
+
+.comment-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.comment-actions button {
+  border: none;
+  background: #eee;
+  padding: 6px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.comment-actions button:hover {
+  background: #ddd;
+}
+
+.more-posts {
+  flex: 1;
+  background:whitesmoke;
+  color: black;
+  padding: 16px;
+  border-radius: 12px;
+  height: fit-content;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.more-posts h3 {
+  margin-bottom: 12px;
+}
+
+.more-posts div {
+  margin-bottom: 12px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #eee;
+}
+
+.more-posts a {
+  text-decoration: none;
+  color: #2d6cdf;
+  font-size: 14px;
+}
+
+.more-posts a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .post-page {
+    flex-direction: column;
+  }
+
+  .more-posts {
+    width: 100%;
+  }
+}
